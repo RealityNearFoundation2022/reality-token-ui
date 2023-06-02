@@ -1,5 +1,5 @@
 <template>
-  <div class="d-flex justify-space-around pa-12">
+  <section id="contact" class="d-flex justify-space-around pa-12">
     <div class="contact text-center" v-for="data in informationData" :key="data.asset">
       <img :src="`/assets/images/${data.asset}.png`" class="circle" alt="Descripción de la imagen" />
       <h1>{{ data.name }}</h1>
@@ -8,7 +8,7 @@
        {{ data.description }}
       </p>
     </div>
-  </div>
+  </section>
 </template>
 
 <script>

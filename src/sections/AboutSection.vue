@@ -1,5 +1,5 @@
 <template>
-    <v-row class=" pa-12">
+    <v-row class=" pa-12" id="description">
         <v-col cols="6">
             <h1>REALITY NEAR</h1>
             <h4>Welcome to the Reality Near, where you will experience your realities in a whole new way! Our cutting-edge

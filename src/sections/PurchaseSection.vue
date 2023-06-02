@@ -1,5 +1,5 @@
 <template>
-    <v-row class="px-12 ">
+    <v-row class="px-12 " id="purchase">
         <v-col cols="3">
             <img src="/assets/images/landing-2.png" class="h-100" alt="Descripción de la imagen" />
         </v-col>

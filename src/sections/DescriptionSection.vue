@@ -1,5 +1,5 @@
 <template>
-    <div>
+    <div id="about">
         <v-row class="d-flex justify-center py-12">
             <div>
                 <h2 class="text-center">Realities</h2>
