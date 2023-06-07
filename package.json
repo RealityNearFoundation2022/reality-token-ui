@@ -11,12 +11,27 @@
     "format": "prettier --write src/"
   },
   "dependencies": {
+    "@near-wallet-selector/core": "^8.1.2",
+    "@near-wallet-selector/modal-ui": "^8.1.2",
+    "@near-wallet-selector/near-wallet": "^8.1.2",
+    "@testing-library/jest-dom": "^5.16.5",
+    "@testing-library/react": "^13.4.0",
+    "@testing-library/user-event": "^13.5.0",
+    "buffer": "^6.0.3",
+    "crypto-browserify": "^3.12.0",
+    "jquery": "^3.6.4",
+    "near-api-js": "^2.1.4",
+    "process": "^0.11.10",
+    "rollup": "^3.23.1",
+    "stream-browserify": "^3.0.0",
     "vue": "^3.2.47",
     "vue-router": "^4.1.6",
     "vuetify": "^3.2.5",
-    "vuetify-loader": "^1.9.2"
+    "vuetify-loader": "^1.9.2",
+    "vuex": "^4.1.0"
   },
   "devDependencies": {
+    "@rollup/plugin-inject": "^5.0.3",
     "@rushstack/eslint-patch": "^1.2.0",
     "@vitejs/plugin-vue": "^4.2.1",
     "@vue/eslint-config-prettier": "^7.1.0",
