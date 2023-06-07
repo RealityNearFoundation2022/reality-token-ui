@@ -14,6 +14,7 @@ import { setupWalletSelector } from '@near-wallet-selector/core';
 // import { setupLedger } from '@near-wallet-selector/ledger';
 import { setupMyNearWallet } from '@near-wallet-selector/my-near-wallet';
 
+import { Buffer } from 'buffer'
 
 import "@near-wallet-selector/modal-ui/styles.css";
 
