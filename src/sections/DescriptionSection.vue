@@ -31,8 +31,8 @@
             </div>
         </v-row>
         <div class="d-flex flex-column align-center bg-primary pa-4 mx-12">
-            <v-btn rounded="xl" color="red" class="mb-2 ">PURCHASE REALITIES</v-btn>
-            <v-btn variant="outlined" color="white" rounded="xl">WHITEPAPER</v-btn>
+            <v-btn rounded="xl" color="red" class="mb-2 btn-xl">PURCHASE REALITIES</v-btn>
+            <v-btn variant="outlined" color="white" class="btn-xl" rounded="xl">WHITEPAPER</v-btn>
         </div>
     </div>
 </template>

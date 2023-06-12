@@ -8,7 +8,7 @@
     </v-toolbar-title>
     <v-spacer></v-spacer>
     <v-toolbar-items>
-      <v-btn v-for="item in menuItems" :key="item.id" text @click="scrollToSection(item.path)">
+      <v-btn  v-for="item in menuItems" :key="item.id" text @click="scrollToSection(item.path)">
         {{ item.label }}
       </v-btn>
     </v-toolbar-items>
@@ -18,7 +18,7 @@
 <script>
 export default {
   name: 'NavBar',
-  props: [ 'layoutView', 'prueba' ],
+  props: [ 'layoutView' ],
   data() {
     return {
       menuItems: [

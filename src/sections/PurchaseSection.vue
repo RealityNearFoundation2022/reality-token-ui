@@ -40,20 +40,20 @@ export default {
             {
                 id: 1,
                 title: 'Realities',
-                amount: '1,000',
-                price: '100.00'
+                amount: 1000,
+                price: 100.00
             },
             {
                 id: 2,
                 title: 'Realities',
-                amount: '7,500',
-                price: '500.00'
+                amount: 7500,
+                price: 500.00
             },
             {
                 id: 3,
                 title: 'Realities',
-                amount: '30,000',
-                price: '1500.00'
+                amount: 30000,
+                price: 1500.00
             }
         ]
     })

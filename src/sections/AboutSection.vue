@@ -12,8 +12,8 @@
                 transaction times and low fees thanks to NEAR protocol, making it a practical choice for our users. Don't
                 miss out on the chance to be a part of the future of reality and buy your Realities ($RLTS) today!</h4>
             <div class="d-flex my-3">
-                <v-btn rounded="xl" color="red" class="mr-2">PURCHASE REALITIES</v-btn>
-                <v-btn variant="outlined" color="white" rounded="xl">WHITEPAPER</v-btn>
+                <v-btn rounded="xl" color="red" class="mr-2 btn-xl">PURCHASE REALITIES</v-btn>
+                <v-btn variant="outlined" color="white"  class="btn-xl" rounded="xl">WHITEPAPER</v-btn>
             </div>
 
         </v-col>
