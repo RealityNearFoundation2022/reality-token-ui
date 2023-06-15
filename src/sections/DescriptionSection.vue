@@ -1,13 +1,13 @@
 <template>
-    <div>
-        <v-row class="d-flex justify-center py-12">
+    <div id="about" class="background-image">
+        <v-row class="d-flex justify-center pb-12">
             <div>
                 <h2 class="text-center">Realities</h2>
                 <h4 class="text-box">These are tokens used as the official currency at Reality Near. To purchase Realities,
                     you have to enter the
                     Realities section, where you must link your NEAR wallet to exchange NEARS for Realities, or you can
                     click
-                    the button “Purchase Realities” below. Once the transaction is made, these will be stored in your
+                    the button "Swap Realities” below. Once the transaction is made, these will be stored in your
                     wallet,
                     with which you can carry out the operations you want within Reality Near.</h4>
             </div>
@@ -30,10 +30,6 @@
                     profits.</h4>
             </div>
         </v-row>
-        <div class="d-flex flex-column align-center bg-primary pa-4 mx-12">
-            <v-btn rounded="xl" color="red" class="mb-2 ">PURCHASE REALITIES</v-btn>
-            <v-btn variant="outlined" color="white" rounded="xl">WHITEPAPER</v-btn>
-        </div>
     </div>
 </template>
 
@@ -45,8 +41,14 @@ export default {
 
 <style lang="css" scoped>
 .text-box {
-    width: 350px;
-    text-align: justify;
-    text-align-last: justify;
+    width: 390px;
+    text-align: center;
+    /* text-align: justify;
+    text-align-last: justify; */
+}
+.background-image {
+  background-image: url('/assets/logos/Fondo_Reality_Token.png');
+  background-size: 600px 600px;
+  background-position: center;
 }
 </style>

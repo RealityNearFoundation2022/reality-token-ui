@@ -1,0 +1,8 @@
+.v-btn{
+    text-transform: none !important;
+    font-family: Source Sans 3 ;
+    font-weight: 800;
+}
+.v-btn.v-btn--variant-outlined {
+    border-width: 3px !important; /* Establece el ancho del borde */
+  }

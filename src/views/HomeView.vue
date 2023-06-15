@@ -1,5 +1,6 @@
 <template >
   <div>
+    <NavBar />
     <AboutSection />
     <DescriptionSection />
     <PurchaseSection />
@@ -10,6 +11,7 @@
 </template>
 
 <script lang="ts">
+import NavBar from '../components/NavBar.vue';
 import BiographySection from '../sections/ BiographySection.vue';
 import AboutSection from '../sections/AboutSection.vue'
 import ContactSection from '../sections/ContactSection.vue';
@@ -22,9 +24,10 @@ import PurchaseSection from '../sections/PurchaseSection.vue';
     DescriptionSection,
     PurchaseSection,
     BiographySection,
-    ContactSection
+    ContactSection,
+    NavBar
 }
-   
+
   }
 </script>
 
