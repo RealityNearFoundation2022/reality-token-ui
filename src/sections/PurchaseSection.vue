@@ -1,5 +1,12 @@
 <template>
-    <v-row class="px-12 " id="purchase">
+    <div class="d-flex flex-column align-center bg-primary pa-4 mx-12">
+        <v-btn rounded="xl" color="red" class="mb-4 btn-xl" @click="scrollToSection('#purchase')">SWAP REALITIES</v-btn>
+        <v-btn variant="outlined" color="white" class="btn-xl" rounded="xl"
+            href="https://drive.google.com/file/d/1E3jNl2VlCZMm6P-LtuWsUbugUuH_iVPs/view?usp=sharing"
+            target="_blank">WHITEPAPER</v-btn>
+    </div>
+    <v-row class="px-12 ">
+
         <v-col cols="3">
             <img src="/assets/images/landing-2.png" class="h-100" alt="Descripción de la imagen" />
         </v-col>
@@ -21,12 +28,11 @@
             </p>
         </v-col>
         <v-col cols="3">
-            <img src="/assets/images/landing-3.png"  class="h-100" alt="Descripción de la imagen" />
+            <img src="/assets/images/landing-3.png" class="h-100" alt="Descripción de la imagen" />
         </v-col>
     </v-row>
-    <v-row class="d-flex justify-space-around mx-12 py-5 bg-primary ">
-        <PurchaseCard  v-for="purchaseCard in purchaseCards"
-          :key="purchaseCard.id" :data="purchaseCard"></PurchaseCard>
+    <v-row class="d-flex justify-space-around mx-12 py-5 bg-primary " id="purchase">
+        <PurchaseCard v-for="purchaseCard in purchaseCards" :key="purchaseCard.id" :data="purchaseCard"></PurchaseCard>
     </v-row>
 </template>
 
@@ -35,6 +41,14 @@ import PurchaseCard from '../components/PurchaseCard.vue';
 
 export default {
     components: { PurchaseCard },
+    methods: {
+        scrollToSection(path) {
+            const element = document.querySelector(path);
+            if (element) {
+                element.scrollIntoView({ behavior: 'smooth' });
+            }
+        },
+    },
     data: () => ({
         purchaseCards: [
             {
@@ -60,5 +74,3 @@ export default {
 }
 </script>
 
-<style lang="css" scoped>
-</style>
