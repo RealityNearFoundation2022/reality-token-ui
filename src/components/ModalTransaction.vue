@@ -92,7 +92,6 @@ export default {
                     // Deberías obtener el monto de depósito necesario para el paquete seleccionado y convertirlo a yoctoNEAR aquí
                     deposit: `${price}`,
                 });
-                alert('ok');
                 this.dialogTransactionOk = true;
             }
             catch (err) {
