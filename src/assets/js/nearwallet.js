@@ -28,7 +28,7 @@ export class Wallet {
   network;
   createAccessKeyFor;
   accountId;
-  contractId = "dev-1686868116069-34345754138764";
+  contractId = "dev-1686953379196-16615581735686";
 
   constructor({ createAccessKeyFor = undefined, network = 'testnet' }) {
     // Login to a wallet passing a contractId will create a local
