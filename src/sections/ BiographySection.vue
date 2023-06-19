@@ -1,18 +1,17 @@
 <template>
-  <section id="contact" class="d-flex justify-space-around pa-12 mt-4">
-    <div class="contact text-center" v-for="data in informationData" :key="data.asset">
-      <img :src="`/assets/images/${data.asset}.png`" class="circle" alt="Descripción de la imagen" />
-      <h1>{{ data.name }}</h1>
-      <h2>{{ data.job }}</h2>
-      <p>
-        {{ data.description }}
-      </p>
-      <a :href="data.linkedin" target="_blank" rel="noreferrer">
-        <img :src="`/assets/logos/linkedin.png`" width="40" class="logo mt-3">
-
-      </a>
+<section id="contact" class="d-flex justify-space-around pa-12 mt-4 flex-wrap">
+    <div class="contact text-center mt-2" v-for="data in informationData" :key="data.asset">
+        <img :src="`/assets/images/${data.asset}.png`" class="circle" alt="Descripción de la imagen" />
+        <h1>{{ data.name }}</h1>
+        <h2>{{ data.job }}</h2>
+        <p>{{ data.description }}</p>
+        <a :href="data.linkedin" target="_blank" rel="noreferrer">
+            <img :src="`/assets/logos/linkedin.png`" width="40" class="logo mt-3">
+        </a>
     </div>
-  </section>
+</section>
+
+
 </template>
 
 <script>

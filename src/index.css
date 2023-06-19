@@ -2,7 +2,13 @@
     text-transform: none !important;
     font-family: Source Sans 3 ;
     font-weight: 800;
+    @media (max-width: 600px) {
+        font-size: 12px;
+      }
 }
 .v-btn.v-btn--variant-outlined {
     border-width: 3px !important; /* Establece el ancho del borde */
+  }
+  * {
+    box-sizing: border-box !important;
   }
