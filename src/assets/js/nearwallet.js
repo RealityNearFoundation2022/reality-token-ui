@@ -29,6 +29,7 @@ export class Wallet {
   createAccessKeyFor;
   accountId;
   contractId = "dev-1686953379196-16615581735686";
+  contractTokenId = "token.guxal.testnet";
 
   constructor({ createAccessKeyFor = undefined, network = 'testnet' }) {
     // Login to a wallet passing a contractId will create a local
@@ -79,12 +80,12 @@ export class Wallet {
     const provider = new providers.JsonRpcProvider({ url: network.nodeUrl });
     let res = await provider.query({
       request_type: 'call_function',
-      account_id: this.contractId,
+      account_id: this.contractTokenId,
       method_name: method,
       args_base64: Buffer.from(JSON.stringify({ account_id: this.accountId})).toString('base64'),
       finality: 'optimistic',
     });
-    return JSON.parse(Buffer.from(res.result).toString());
+    return this.parseAmount(JSON.parse(Buffer.from(res.result).toString()));
   }
 
   // Call a method that changes the contract's state

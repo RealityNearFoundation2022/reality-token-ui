@@ -26,7 +26,7 @@ const nearConfig = {
   }
 
 
-const wallet = new Wallet({ createAccessKeyFor: nearConfig.contractName })
+const wallet = new Wallet({ createAccessKeyFor: nearConfig.contractName, network: nearConfig.networkId })
 
 
 const store = createStore({
@@ -50,7 +50,7 @@ async function initialize() {
         // setBalanceToken(await getTokenBalance())
         console.log('login')
     } else {
-        store.commit('setWallet', new Wallet({ createAccessKeyFor: nearConfig.contractName })) // Nueva instancia no logueada
+        store.commit('setWallet', new Wallet({ createAccessKeyFor: nearConfig.contractName, network: nearConfig.networkId })) // Nueva instancia no logueada
         // setBalanceToken(null)
         console.log('no login')
     }
