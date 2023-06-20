@@ -76,7 +76,7 @@ export default {
             this.$store.state.wallet.signIn()
         },
         async buy() {
-            const price = parseInt(this.price);
+            const price = parseInt(this.price * this.amountToBuy);
 
             let signIn = await this.$store.state.wallet.startUp();
 
@@ -89,6 +89,7 @@ export default {
             try {
                 await this.$store.state.wallet.callMethodBatch({
                     package: this.id,
+                    quantity: this.amountToBuy,
                     // Deberías obtener el monto de depósito necesario para el paquete seleccionado y convertirlo a yoctoNEAR aquí
                     deposit: `${price}`,
                 });

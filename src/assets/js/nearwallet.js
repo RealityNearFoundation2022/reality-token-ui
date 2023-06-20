@@ -176,7 +176,7 @@ export class Wallet {
   }
 
   //
-  async callMethodBatch({deposit, package: packageId}) {
+  async callMethodBatch({deposit, package: packageId, quantity: quantity}) {
    
     let gas = "30000000000000";
     await this.wallet.signAndSendTransaction({
@@ -196,7 +196,7 @@ export class Wallet {
           type: "FunctionCall",
           params: {
             methodName: "buy",
-            args: Buffer.from(JSON.stringify({ package: packageId })),
+            args: Buffer.from(JSON.stringify({ package: packageId, quantity: quantity })),
             gas,
             deposit: utils.format.parseNearAmount(deposit),
           },
