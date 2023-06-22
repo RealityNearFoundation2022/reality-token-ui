@@ -10,28 +10,29 @@
         <v-col cols="3" class="hidden-sm-and-down" >
             <img src="/assets/images/landing-2.png" class="h-100" alt="Descripción de la imagen" />
         </v-col>
-        <v-col cols="12" sm="6" class="text-center py-12">
-            <h2>REALITY NEAR</h2>
-            <h4>World of infinite opportunities</h4>
-            <p>
+        <v-col cols="12" sm="6" class="text-center py-12 px-6 d-flex justify-center align-center flex-column">
+            <h2 class="mb-2">REALITY NEAR</h2>
+            <h4 class="my-1">World of infinite opportunities</h4>
+            <p >
                 Explore endless possibilities in Reality Near! Our XR experience aims to enhance and change the way you
                 interact with your reality in a decentralized world. It is designed for a diverse community with varied
                 interests. By utilizing technologies, such as augmented and virtual reality, we create a space where brands
                 can connect with their audience in innovative and exciting ways, generating value for both.
                 At Reality Near, we promote innovation, enabling businesses to provide immersive experiences to their
                 customers across multiple realities. Our decentralized model creates an equal playing field, where every
-                member can unleash their creativity and bring their wildest ideas to life.
+                member can unleash their creativity and bring their wildest eas to life.
                 Our advanced technology is poised to revolutionize the global market, driving innovation, creativity, and
                 reach to new heights. By strengthening brand-consumer bonds, we're unlocking new growth opportunities.
                 Join the Reality Near community today and explore the possibilities! The future is now, and Reality Near
                 leads the way!
             </p>
+            <div id="purchase"></div>
         </v-col>
         <v-col cols="3" class="hidden-sm-and-down">
             <img src="/assets/images/landing-3.png" class="h-100" alt="Descripción de la imagen" />
         </v-col>
     </v-row>
-    <v-row class="d-flex justify-space-around mx-sm-12 py-5 bg-primary " id="purchase">
+    <v-row class="d-flex justify-space-around mx-sm-12 py-5 bg-primary ">
         <PurchaseCard v-for="purchaseCard in purchaseCards" :key="purchaseCard.id" :data="purchaseCard"></PurchaseCard>
     </v-row>
 </template>

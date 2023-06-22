@@ -20,7 +20,7 @@
           <v-list-item-title>{{ item.label }}</v-list-item-title>
         </v-list-item>
       </v-list>
-      <LoginButton ></LoginButton>
+      <LoginButton @click="drawer = !drawer"></LoginButton>
     </v-navigation-drawer>
 </template>
 
