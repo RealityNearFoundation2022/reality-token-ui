@@ -16,7 +16,7 @@
         <a
           v-for="footer in footerArray"
           :key="footer.path"
-          :href="footer.path"
+          :href="footer.link"
           target="_blank"
           rel="noreferrer"
         >
