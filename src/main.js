@@ -19,10 +19,10 @@ const vuetify = vuetifyConfig
 
 // Inicializa la conexión a NEAR
 const nearConfig = {
-    networkId: 'testnet',
-    nodeUrl: 'https://rpc.testnet.near.org',
-    contractName: 'token.guxal.testnet',
-    walletUrl: 'https://testnet.mynearwallet.com/',
+    networkId: 'mainnet',//'testnet', configuracion de produccion cambiar si se encuentra en local
+    nodeUrl: 'https://rpc.near.org', // 'https://rpc.testnet.near.org',
+    contractName: 'token.realitymaster.near' ,// 'token.guxal.testnet',
+    walletUrl: 'https://mynearwallet.com/' ,// 'https://testnet.mynearwallet.com/',
   }
 
 

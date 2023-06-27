@@ -28,8 +28,8 @@ export class Wallet {
   network;
   createAccessKeyFor;
   accountId;
-  contractId = "dev-1686953379196-16615581735686";
-  contractTokenId = "token.guxal.testnet";
+  contractId = "package.realitymaster.near"; // "dev-1686953379196-16615581735686";
+  contractTokenId = "token.realitymaster.near"; // "token.guxal.testnet";
 
   constructor({ createAccessKeyFor = undefined, network = 'testnet' }) {
     // Login to a wallet passing a contractId will create a local
