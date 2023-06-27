@@ -6,6 +6,7 @@
     <PurchaseSection />
     <BiographySection />
     <ContactSection />
+    <FooterSection />
   </div>
 
 </template>
@@ -17,6 +18,7 @@ import AboutSection from '../sections/AboutSection.vue'
 import ContactSection from '../sections/ContactSection.vue';
 import DescriptionSection from '../sections/DescriptionSection.vue';
 import PurchaseSection from '../sections/PurchaseSection.vue';
+import FooterSection from '../sections/FooterSection.vue';
 
   export default {
     components: {
@@ -25,12 +27,9 @@ import PurchaseSection from '../sections/PurchaseSection.vue';
     PurchaseSection,
     BiographySection,
     ContactSection,
-    NavBar
+    NavBar,
+    FooterSection
 }
 
   }
 </script>
-
-<style lang="scss" scoped>
-
-</style>

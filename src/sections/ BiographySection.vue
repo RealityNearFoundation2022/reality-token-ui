@@ -1,6 +1,6 @@
 <template>
 <section id="contact" class="d-flex justify-space-around pa-12 mt-4 flex-wrap">
-    <div class="contact text-center mt-2" v-for="data in informationData" :key="data.asset">
+    <div class="contact text-center my-6" v-for="data in informationData" :key="data.asset">
         <img :src="`/assets/images/${data.asset}.png`" class="circle" alt="Descripción de la imagen" />
         <h1>{{ data.name }}</h1>
         <h2>{{ data.job }}</h2>

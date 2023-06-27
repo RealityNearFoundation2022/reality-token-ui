@@ -9,7 +9,7 @@
                         <v-icon></v-icon>
                     </template>
                 </v-btn>
-                <v-btn v-else variant="outlined" color="primary-darken-1" @click="login()" rounded="xl" class="mr-3 ml-2">
+                <v-btn v-else variant="outlined"  color="primary-darken-1" @click="login()" rounded="xl" class="mr-3 ml-2 hidden-sm-and-down">
                     Login
                 </v-btn>
             </template>
@@ -57,8 +57,9 @@ export default {
         accountId: '',
     }),
     methods: {
-        login() {
+        login() { 
             this.$store.state.wallet.signIn()
+            
         },
         signOut() {
             this.$store.state.wallet.signOut()

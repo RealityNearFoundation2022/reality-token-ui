@@ -1,5 +1,5 @@
 <template>
-    <div class="rounded-xl purchase-card pa-4 d-flex flex-column text-center">
+    <div class="rounded-xl purchase-card pa-4 ma-4 d-flex flex-column text-center">
         <h1>{{ data.amount }}</h1>
         <h2> {{ data.title }}</h2>
         <img :src="`/assets/images/Paquete${data.id}.png`"  :height="100" class="align-self-center"
@@ -28,7 +28,7 @@ export default {
 .purchase-card {
     border: 3px solid white;
     height: 350px;
-    min-width: 200px;
-    max-width: 250px;
+    min-width: 230px;
+    max-width: 260px;
 }
 </style>

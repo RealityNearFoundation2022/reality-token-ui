@@ -4,6 +4,6 @@ import { RouterView } from 'vue-router'
 
 <template>
   <v-app>
-    <RouterView class="mt-12 "/>
+    <RouterView class="mt-12"/>
   </v-app>
 </template>

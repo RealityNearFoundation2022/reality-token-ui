@@ -20,7 +20,7 @@
           <v-list-item-title>{{ item.label }}</v-list-item-title>
         </v-list-item>
       </v-list>
-      <LoginButton ></LoginButton>
+      <LoginButton @click="drawer = !drawer"></LoginButton>
     </v-navigation-drawer>
 </template>
 
@@ -37,7 +37,7 @@ export default {
       drawer: false,
       menuItems: [
         { id: 1, label: 'Reality Token', path: '#description' },
-        { id: 2, label: '¿What is Reality Near?', path: '#about' },
+        { id: 2, label: 'What is Reality Near?', path: '#about' },
         { id: 3, label: 'Swap Realities', path: '#purchase' },
         { id: 4, label: 'Contact us', path: '#contact' },
       ],

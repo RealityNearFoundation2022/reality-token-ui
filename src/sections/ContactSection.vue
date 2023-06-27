@@ -9,9 +9,7 @@
             </a>
         </div>
     </div>
-    <div class="text-center pa-4">
-        <p>© Reality Near Foundation {{ new Date().getFullYear() }}</p>
-    </div>
+   
 </template>
 
 <script>
