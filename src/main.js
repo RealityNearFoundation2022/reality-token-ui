@@ -62,5 +62,8 @@ initialize().then(() => {
   app.use(router)
   app.use(store) // Asegúrate de usar la tienda Vuex en tu aplicación
   app.use(vuetify)
+  app.use(VueGtag, {
+    config: { id: "G-TNDKG0BYVW" }
+  })
   app.mount('#app')
 });
