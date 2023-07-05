@@ -6,6 +6,7 @@ import vuetifyConfig from './vuetify'
 import 'vuetify/styles'
 import 'vuetify/dist/vuetify.min.css'
 import './index.css'
+import VueGtag from "vue-gtag";
 
 import { Buffer } from 'buffer'
 
