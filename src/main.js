@@ -13,6 +13,7 @@ import { Buffer } from 'buffer'
 import { Wallet } from './assets/js/nearwallet'
 
 import { createStore } from 'vuex'
+import VueGtagPlugin from 'vue-gtag'
 
 window.Buffer = window.Buffer || Buffer
 
@@ -43,6 +44,7 @@ const store = createStore({
   }
 })
 
+
 async function initialize() {
     let isSignedIn = await wallet.startUp();
     
@@ -58,13 +60,26 @@ async function initialize() {
 }
 
 
+// Vue.use(VueAnalytics, {
+//   id: 'G-TNDKG0BYVW',
+//   router
+// });
+
 initialize().then(() => {
   const app = createApp(App)
-  app.use(router)
   app.use(store) // Asegúrate de usar la tienda Vuex en tu aplicación
+  app.use(router)
+  app.use(VueGtagPlugin, {
+    config: { id: "G-TNDKG0BYVW" }
+  }, router);
+  // app.use(VueAnalytics, {
+  //   id: 'G-TNDKG0BYVW',
+  //   router
+  // })
   app.use(vuetify)
   app.use(VueGtag, {
     config: { id: "G-TNDKG0BYVW" }
   })
   app.mount('#app')
 });
+
