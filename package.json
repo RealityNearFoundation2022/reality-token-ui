@@ -11,9 +11,9 @@
     "format": "prettier --write src/"
   },
   "dependencies": {
-    "@mdi/font": "^7.2.96",
     "@esbuild-plugins/node-globals-polyfill": "^0.2.3",
     "@esbuild-plugins/node-modules-polyfill": "^0.2.2",
+    "@mdi/font": "^7.2.96",
     "@near-wallet-selector/core": "^8.1.2",
     "@near-wallet-selector/modal-ui": "^8.1.2",
     "@near-wallet-selector/near-wallet": "^8.1.2",
@@ -30,6 +30,8 @@
     "stream-browserify": "^3.0.0",
     "util": "^0.12.5",
     "vue": "^3.2.47",
+    "vue-analytics": "^5.22.1",
+    "vue-gtag": "^2.0.1",
     "vue-router": "^4.1.6",
     "vuetify": "^3.2.5",
     "vuetify-loader": "^1.9.2",
