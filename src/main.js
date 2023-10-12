@@ -6,7 +6,6 @@ import vuetifyConfig from './vuetify'
 import 'vuetify/styles'
 import 'vuetify/dist/vuetify.min.css'
 import './index.css'
-import VueGtag from "vue-gtag";
 
 import { Buffer } from 'buffer'
 
@@ -77,9 +76,6 @@ initialize().then(() => {
   //   router
   // })
   app.use(vuetify)
-  app.use(VueGtag, {
-    config: { id: "G-TNDKG0BYVW" }
-  })
   app.mount('#app')
 });
 
